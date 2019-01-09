@@ -1,0 +1,374 @@
+## other
+
+  - adversarial environments for training reinforcement learning agents as in self-play - with the same agent making the next most advantageous move either for himself or environment [https://arxiv.org/abs/1812.01647]
+  - unsupervised learning of mappings between language and image/video data similar to already developed mappings in unsupervised machine translation and unsupervised speech-to-text [https://arxiv.org/abs/1805.07467]
+
+
+  "Fully autonomous driving systems need to be able to handle the long tail of situations that occur in the real world. While deep learning has enjoyed considerable success in many applications, handling situations with scarce training data remains an open problem. Furthermore, deep learning identifies correlations in the training data, but it arguably cannot build causal models by purely observing correlations, and without having the ability to actively test counterfactuals in simulation. Knowing why an expert driver behaved the way they did and what they were reacting to is critical to building a causal model of driving. For this reason, simply having a large number of expert demonstrations to imitate is not enough. Understanding the why makes it easier to know how to improve such a system, which is particularly important for safety-critical applications."
+
+
+  "Identifying real problems is not easy, but it is easy to identify fake problems: making computers play Atari games is certainly not a real problem. Making computers generate fake celebrities is certainly a fake problem. Making computers achieve 99% on some closed dataset is fake."
+
+
+  recognizing analogies as the central part of human's reasoning
+
+
+  IBM Watson like collection of algorithms not only for texts but for arbitrary computational models of phenomena.
+
+
+  "Robust Adversarial Reinforcement Learning" [https://arxiv.org/abs/1703.02702]
+  "Tracking Emerges by Colorizing Videos" [https://arxiv.org/abs/1806.09594]
+  Methods for evolving small interpretable programs turned out to be competitive on Atari videogames with methods for learning non-interpretable neural networks [https://arxiv.org/abs/1806.05695].
+
+  Statistical models had been used for two centuries and had been used in e-commerce for two decades (Google and Amazon can't optimize their products and businesses without models for their processes) but lately all that got rebranded as AI.
+
+
+  robotic hand should handle objects with quite arbitrary shape and mass
+  Dota bot should adapt to changes in game rules (new hero) w/a training
+
+
+  "Prediction: Any AI problem that you can simulate and sample endlessly many training samples for can be solved with today's algorithms such as deep and reinforcement learning."
+  "Prediction: The currently hip ai algorithms that require endless samples from a simulation will never get us to generalizable ai capabilities (or agi). Some things can't be simulated/sampled until solved like natural language or many other important areas like medicine."
+
+
+  "One way to think of a neural network is as a hashtable where the hashing function is locality-sensitive. It memorizes training inputs & targets, and is capable of successfully querying targets for test inputs that are very close to what it has already seen."
+  It's an open question how good are deep learning models in generalization versus memorization.
+
+
+  The central problem of AI is Moravec Paradox: the simplest reality is more complex than the most complex game.
+  Deep Learning models often work for the wrong reason.
+  Tests designed for humans are not generally valid for machines because tests for humans are designed with limitations of humans taken into account.
+
+
+  throwing more and more compute (AlphaGo, Dota 2, robotic hand) without major advances in algorithms
+
+
+  "To make progress on AI, we must measure abstraction strength and generalization power, not plain skill." [https://twitter.com/fchollet/status/1022718318032039936]
+
+
+  model-free learners vs model-based solvers
+
+
+  "Detecting abnormality (directly, by hoping for enough abnormal training data) is the wrong philosophy IMO. Best line of attack is to become better and better at *provably specific* generative models of normal anatomy. Anything such a model can’t draw is abnormal by definition. It’s a safety-first attack on the problem. Extreme (silly) example: your model is a single healthy image confirmed to be healthy by experts. Any image which isn’t *identical* to it is therefore abnormal. A useless model, but a safe one. Now build up from that."
+
+
+  "The Google/Waymo approach is to get a point cloud with LIDAR and radar, profile the terrain and obstacles, and figure out where it's physically possible to go. That's geometry based. In parallel, a classifier system is trying to tag objects in the scene, which feeds into a system which tries to predict what other road users are going to do.
+  With that approach, a classifier result of "not identified" is fine. The system will detect and avoid it, or stop for it, and make conservative assumptions about its expected behavior. Chris Urmson, in his SXSW talk, showed video of a woman in a powered wheelchair chasing a turkey with a broom. This was not identified by the classifier, but it was clearly an obstruction, so the vehicle stopped for it. That's essential here. It has to do something safe with unidentified or mis-identified objects.
+  At Tesla, Musk insisted that this could be done with a camera alone because humans can drive on vision alone. So Tesla has people trying to make camera-only driving work. Not very successfully so far. The basic mindset here is to run image classifiers to classify the objects in an image, then use the classifier output to decide what to do. There's no geometric analysis. That's scary. Classifiers just aren't that goo."
+
+
+  "By 1985 I had spent a decade working in computer vision, trying to extract symbolic descriptions of the world from images, and in traditional robotics, building planning systems for robots to operate in simulated or actual worlds.
+  I had become very frustrated.
+  Over the previous couple of years as I had tried to move from purely simulated demonstrations to getting actual robots to work in the real world, I had become more and more buried in mathematics that was all trying to estimate the uncertainty in what my programs knew about the real world. The programs were trying to measure the drift between the real world, and the perceptions that my robots were making of the world. We knew by this time that perception was difficult, and that neat mapping from perception to certainty was impossible. I was trying to accommodate that uncertainty and push it through my planning programs, using a mixture of traditional robotics and symbolic Artificial Intelligence. The hope was that by knowing how wide the uncertainty was the planners could accommodate all the possibilities in the actual physical world.
+  I will come back to the implicit underlying philosophical position that I was taking in the last major blog post in this series, to come out later this year.
+But then I started to reflect on how well insects were able to navigate in the real world, and how they were doing so with very few neurons (certainly less that the number of artificial neurons in modern Deep Learning networks). In thinking about how this could be I realized that the evolutionary path that had lead to simple creatures probably had not started out by building a symbolic or three dimensional modeling system for the world. Rather it must have begun by very simple connections between perceptions and actions.
+  In the behavior-based approach that this thinking has lead to, there are many parallel behaviors running all at once, trying to make sense of little slices of perception, and using them to drive simple actions in the world. Often behaviors propose conflicting commands for the robot’s actuators and there has to be a some sort of conflict resolution. But not wanting to get stuck going back to the need for a full model of the world, the conflict resolution mechanism is necessarily heuristic in nature. Just as one might guess, the sort of thing that evolution would produce.
+  Behavior-based systems work because the demands of physics on a body embedded in the world force the ultimate conflict resolution between behaviors, and the interactions. Furthermore by being embedded in a physical world, as a system moves about it detects new physical constraints, or constraints from other agents in the world. For synthetic characters in video games under the control of behavior trees, the demands of physics are replaced by the demands of the simulated physics needed by the rendering engine, and other agents in the world are either the human player of yet more behavior-based synthetic characters.
+  Just in the last few weeks there has been a great example of this that has gotten a lot of press. Here is the original story about MIT Professor Sangbae Kim’s Cheetah 3 robot. The press was very taken with the robot blindly climbing stairs, but if you read the story you will see that the point of the research is not to produce a blind robot per se. Computer vision, even 3-D vision, is not completely accurate. So any robot that tries to climb rough terrain using vision, rather than feel, needs to be very slow, careful placing its feet one at a time, as it does not know exactly where the solid support in the world is. In this new work, Kim and his team have built a collection of low level behaviors which sense when things have gone wrong and quickly adapt individual legs. To prove the point, they made the robot completely blind–the performance of their robot will only increase as vision gives some high level direction to where the robot should aim its feet, but even so, having these reactive behaviors at the lowest levels make it much faster and more sure footed.
+  The behavior-based approach, which leaves the model out in the world rather than inside the agent, has allowed robots to proliferate in number." [http://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here] ("behavior-based robotics" chapter)
+
+
+  "The real subjectivity is in ML, which spends all its time developing new techniques to optimize a subjectively-chosen goal function on a subjectively-chosen test set."
+
+  "There is that never ending confusion between what is supervised and what is not. I'd like to think that supervised is when the label cannot easily be obtained from the data itself, e.g. needs to be provided by a human. But there is another aspect rarely discussed which is whether the learning is local or global. End-to-end is a global learning paradigm. Each weight is a optimized via derivative of the whole function. Local rules are simpler and may lead to emergent properties, i.e. the whole system is more than the sume of parts. Nothing you plan from top down can be emergent by definition. Stuff that emerges from bottom up, on the other hand can be extremely scalable and robust, that is after you figure out how to constrain it and make it stable."
+
+
+  Deep Learning methods don't learn generative / causal model of phenomena but learn its surface patterns and thus can't imagine consequences of hypothetical interventions.
+  Deep Learning methods are not very useful for detecting anomalies because they capture surface patterns.
+  Deep Learning methods are weak for natural language understanding tasks which require learning model of environment and mapping word sequences to simulations on that model.
+
+
+  It would be cool to publish meta-research on all interesting published optimization objectives for self-organization of matter and emergence of intelligence as consequence.
+
+
+  ML in e-commerce is successful because of enormous amount of (weakly) labeled data (all logged actions of users)
+
+
+  "My number is bigger than yours is the lowest kind of a science."
+
+  There are huge possibilities to make breakthroughs in AI out of Google and other corporate labs. As example, one of the most interesting and relevant papers during last few years from single researcher based in unknown Franklin and Marshall College [https://arxiv.org/abs/1801.09624].
+
+  Identifying and sponsoring ingenious mathematicians and physicists in academia might have better potential at producing breakthrough research than corporate labs which are oriented towards short-term applied results for products or PR.
+
+
+  Hubert Dreyfus's view on AI [https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence] published before the first AI winter (Dreyfus argued with Marvin Minsky).
+  James Lighthill's report on AI [https://youtube.com/watch?v=yReDbeY7ZMU] (lack of substantial progress in machine translation and speech understanding) triggered the first AI winter (Lighthill argued with John McCarthy).
+  It is quite possible that lack of substantial progress in self-driving cars and personal assistants over next few years might trigger the third AI winter because of enormous investments [https://blog.piekniewski.info/2018/05/28/ai-winter-is-well-on-its-way] [https://blog.piekniewski.info/2018/06/06/ai-winter-addendum].
+
+
+
+
+  * issues
+  * knowledge vs intelligence
+  * what is intelligence
+  * limitations
+  * hype
+  * paths to intelligence
+
+
+
+
+## issues
+
+  The biggest issue with AI is not that it is stupid but lack of definition for intelligence and hence lack of measure for it [https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent] [http://blog.piekniewski.info/2016/08/09/intelligence-is-real].
+  Turing test is not a good measure because gorilla Koko wouldn't pass but she could solve more problems than lots of disabled human beings [http://rodneybrooks.com/forai-steps-toward-super-intelligence-ii-beyond-the-turing-test] [http://rodneybrooks.com/forai-steps-toward-super-intelligence-iv-things-to-work-on-now].
+  It is quite possible that people in the future will wonder why so many people back in 2018 thought playing Go and other games in fixed simulated environments after long training had anything to do with intelligence and wasn't just a search/optimization problem like many others in computer science.
+  Intelligence is more about adapting/transfering old knowledge to new task (playing Quake Arena quite good without any training after mastering Doom) than it is about compressing experience into heuristics to predict outcome (playing Quake Arena quite good after million games after mastering Doom).
+  Human intelligence is about ability to adapt to physical and social world, and playing Go is a particular adaptation performed by human intelligence, and developing algorithm to learn to play Go is more performant adaptation, and developing mathematical theory to play Go might be even more performant.
+  It makes more sense to compare a human and AI not by effectiveness/efficiency of end product of adaptation (in games played between human and agent) but by effectiveness/efficiency of process of adaptation (in games played between human-coded agent and machine-learned agent after limited practice).
+  Dota 2, StarCraft 2, Civilization 5 and probably even GTA 5 might be solved in not so distant future but ability to play any new game at human level with no prior training would be way more significant.
+
+  The second biggest issue with AI is lack of robustness in a long tail of uncommon cases (and critical ones in medicine, self-driving vehicles, finance) which presently can't be handled with accuracy even close to acceptable [section "limitations"] [http://blog.piekniewski.info/2016/11/15/ai-and-the-ludic-fallacy] [http://blog.piekniewski.info/2017/01/13/outside-the-box] [http://blog.piekniewski.info/2017/07/27/measuring-performance-ml] [http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world] [https://blog.piekniewski.info/2017/04/03/the-complexity-of-simplicity].
+  Complex ML models exploit any patterns that relate input to output variables but some patterns might not hold for cases poorly represented in training data. >99% of healthcare applications use simple ML models such as logistic regression with heavily engineered features - for better robustness in unusual cases [https://twitter.com/david_sontag/status/1009630754710675456]. The clear trend in popular web services is more feature engineering (converting domain knowledge into code to compute statistics, obtaining better performance using more relevant knowledge) - not more sophisticated Deep Learning models (mostly used in production for applications where feature engineering might not lead to better performance such as sensoric applications).
+  For an organism, real world is not a game with fixed known environment and rules such as Go or Quake but a game with environment and rules largerly unknown and always changing. It has to adapt to unexpected changes of environment and rules including changes caused by adversaries. It has to be capable of wide autonomy as opposed to merely automation necessary to play some fixed game.
+  It may turn out to be impossible to have humanoid robots and self-driving vehicles operating alongside humans without training them to obtain human-level adaptability to real world. It may turn out to be impossible to have personal assistants substituting humans in key aspects of their lives without training them to obtain human-level adaptability to social world [http://rodneybrooks.com/forai-steps-toward-super-intelligence-ii-beyond-the-turing-test].
+
+  Arguably during Deep Learning renaissance period there hasn't been progress in real-world problems such as robotics, language understanding, healthcare nearly as significant as in fixed games running in simulated environments.
+  On unsolved questions in machine learning for real-world problems [https://youtu.be/4inIBmY8dQI?t=13m9s] [https://youtu.be/Tkl6ERLWAbA?t=3m17s] (arguably number 1 ML researcher).
+  On relevance of games to machine learning for real-world problems [http://hunch.net/?p=9828091] (arguably number 1 ML researcher at Microsoft).
+
+
+
+
+## knowledge vs intelligence
+
+  Knowledge is some information, such as observations or experiences, compressed and represented in some computable form, such as text in natural language, mathematical theory in semi-formal language, program in formal language, weights of neural network or synapses of brain.
+
+  Knowledge is about tool (theory, algorithm, physical process) to solve problem. Intelligence is about applying (transfering) and creating (learning) knowledge. There is knowledge how to solve problem (algorithm for computer, instructions for human), and then there is process of applying that knowledge (executing program by computer, interpreting and executing instructions by human), and then there is process of creating knowledge (learning from observations and experiments, inferring/reasoning of new knowledge from old one).
+
+  Alpha(Go)Zero is way closer to knowledge how to solve particular class of problems than to an intelligent agent capable of applying and creating knowledge. It is a search algorithm like IBM Deep Blue with heuristics being not hardcoded but being tuned during game sessions. It can't apply learned knowledge to other problems - even playing on smaller Go board. It can't create abstract knowledge useful to humans - even simple insight on Go tactics.
+  TD-Gammon from 1992 is considered by many as the biggest breakthrough in AI [https://youtube.com/watch?v=9EN_HoEk3KY&t=29m44s]. Note that TD-Gammon didn't use Q-learning - it used TD(λ) with online on-policy updates. TD-Gammon's author used its variation to learn IBM Watson's wagering strategy [https://youtube.com/watch?v=7rIf2Njye5k].
+  Alpha(Go)Zero is also roughly a variation of TD(λ) [http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031]. TD-Gammon used neural network trained by Temporal Difference learning with target values calculated using tree search with depth not more than three and using results of full game playouts as optimal value estimates. Alpha(Go)Zero used deep neural network trained by Temporal Difference learning with target values calculated using Monte-Carlo Tree Search with unlimited depth and using optimal value and policy estimates calculated by network without full game playouts.
+  Qualitative differences between Backgammon and Go as problems and between TD-Gammon and Alpha(Go)Zero as solutions (scale of neural network and number of played games being major differences) are not nearly as big as qualitative differences between perfect information games such as Go and imperfect information games such as Poker (Alpha(Go)Zero and Libratus can't be used correspondingly for Poker and Go).
+  PhD student with web/SEO background [http://www.tomanthony.co.uk] came up with effectively the same algorithm as Alpha(Go)Zero for game of Hex independently from DeepMind but submitted it for publishing a month later [https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search].
+
+  IBM Watson, the most advanced question answering system by far in 2011, is not an intelligent agent. It is knowledge represented as 100Ks lines of hand-crafted logic for searching / manipulating sequences of words and generating hypotheses / supporting arguments plus few hundred parameters tuned with linear regression for weighing in different pieces of knowledge for each supported type of question / answer [https://youtube.com/watch?v=DywO4zksfXw] [https://youtu.be/1n-cwezu8j4?t=53m4s]. It's not that much different conceptually from database engines which use statistics of data and hardcoded threshold values to construct a plan for executing given query via selecting and pipelining a subset of implemented algorithms for manipulating data.
+
+  Google Duplex must be a heavily engineered solution for very narrow domains and tasks which involves huge amount of human labor to write rules and to label data. Google was reported to employ 100 of PhD linguists working just on rules and data for question answering in Google Search and Assistant [https://wired.com/2016/11/googles-search-engine-can-now-answer-questions-human-help].
+
+  IBM Debater is a heavily engineered solution for finding and summarizing texts relevant to given topic (without state-of-the-art results on academic benchmarks for summarization) [https://scholar.google.com/citations?user=KjvrNGMAAAAJ&sortby=pubdate] [https://youtube.com/watch?v=TYJ3iwW59_w] [https://youtube.com/watch?v=8Xd4-cV9d74]. It can't answer opponent's arbitrary questions about its own arguments because it neither has or learns any model of domain it argues about.
+
+  Nevertheless, AlphaGo and IBM Watson were breakthrough applications.
+
+
+
+
+## what is intelligence
+
+  Biologists define intelligence as ability to find non-standard solutions for non-standard problems and distinguish it from reflexes and instincts defined as standard solutions for standard problems. Playing Go can't be considered a non-standard problem for AlphaGo after playing 30 million games. Detecting new malware can be considered a non-standard problem with no human-level solution so far. A broader definition is information processing necessary to achieve goals with limited resources.
+
+  Necessity to adapt/survive provides optimization objectives for organisms to guide self-organization and learning/evolution. Some organisms can set up high-level objectives for themselves after being evolved/trained to satisfy low-level objectives.
+  >99% of AI research focuses on top-down approach to intelligence, i.e. defining optimization objective for high-level problem (such as maximizing expected probability of win by Alpha(Go)Zero) and expecting optimization process to find appropriate solutions for low-level subproblems. This approach works for relatively simple problems like games in simulated environments but requires enormous amount of training episodes (several orders of magnitude more than amount which can be experienced by agent in real world) and leads to solutions incapable of generalization (Alpha(Go)Zero trained on 19x19 board which can't be adapted to 9x9 board without retraining). Hardest high-level problems which can be solved by humans are open-ended - humans don't search in fixed space of possible solutions unlike AlphaGo. Being informed and guided by observations and experiments in real world, humans come up with intermediate goals (e.g. special/general relativity).
+  A few AI researchers [section "paths to intelligence"] work on bottom-up approach, i.e. starting with low-level objectives (such as maximizing predictability of environment or of effect on environment), then adding higher-level objectives for intrinsic motivation (such as maximizing learning progress or available future options), and only then adding high-level objectives for problems of interest (such as maximizing game score). This approach is expected to lead to more robust solutions for high-level problems because learning with low-level objectives leads to agent also learning self-directing or self-correcting behavior helpful in non-standard or dangerous situations with zero information about them effectively provided by high-level objective. It is quite possible that some set of universal low-level objectives might be derived from a few equations governing flow of energy and information [section "paths to intelligence"]. So that optimization with those objectives might lead to intelligence of computers in a analogous way to how evolution of the Universe governed by laws of physics leads to intelligence of organisms.
+  While solving high-level problems in simulated environments such as Go had successes, solving low-level problems such as vision and robotics are yet to have such successes. Humans can't learn to play Go without first learning to discern board and move stones. Computer can solve some high-level problems without ability to solve low-level ones when high-level problems are abstracted away from low-level subproblems by humans. It is low-level problems which are more computationally complex for both humans and computers although not necessarily more complex as mathematical or engineering problems. It is low-level problems which are prerequisites for commonsense reasoning, i.e. estimating plausibility of given hypothesis from given observations and previously acquired knowledge, which is necessary for machine to adapt to arbitrary given environment and to solve arbitrary high-level problem in that environment [https://en.wikipedia.org/wiki/Moravec%27s_paradox] [https://youtu.be/DIE0jG1Jk8k?t=59m23s].
+ 
+  The biggest obstacle to applications in real-world environments as opposed to simulated environments seems to be underconstrained objectives for optimization. Any sufficiently complex model trained with insufficiently constrained objective will exploit any pattern found in training data that relates input to target variables but spurious correlations won't generalize to testing data [http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world] [https://en.wikipedia.org/wiki/Goodhart%27s_law].
+  Even billion examples don't constrain optimization sufficiently and don't lead to major performance gains in image recognition [https://arxiv.org/abs/1707.02968] [https://youtube.com/watch?v=9497PCSNss4].
+  Agent finds surprising ways to exploit simulated environment to maximize objective not constrained enough to prevent exploits [https://youtube.com/watch?v=-p7VhdTXA0k].
+  Two ways to constrain optimization sufficiently to avoid non-generalizable solutions are more informative data for training (using physics of real world or dynamics of social world as sources of signal as opposed to simulated environments not nearly as complex and not representative of corner cases in real/social world) and more complex objectives for optimization (predicting not only statistics of interest such as future cumulative rewards conditionally on agent's next actions but also predicting dynamics, i.e. some arbitrary future properties of environment conditionally on some arbitrary hypothetical future events including agent's next actions - progress in learning to make such predictions might be the strongest form of intrinsic motivation for agent).
+
+  There is enormous gap between complexity of simulated environments available for present computers and complexity of real-world environments available for present robots so that agent trained in simulated environment can't be transfered to robot in real-world environment with acceptable performance and robustness [https://youtube.com/watch?v=7A_QPGcjrh0].
+  Boston Dynamics researchers don't use machine learning to control robots - they use real-time solvers of differential equations to calculate dynamics and optimal control for models of robots and environments which are not learned from data but specified manually [https://youtube.com/watch?v=aFuA50H9uek] [https://quora.com/What-kind-of-learning-algorithms-are-used-on-Boston-Dynamics-robots/answer/Eric-Jang].
+  MIT team didn't use machine learning to control their robot in DARPA Robotics Challenge 2015, and their robot was the only robot which didn't fall or need physical assistance from humans [https://youtube.com/watch?v=2GW7ozcUCFE].
+  Long tails might be not learnable statistically and require reasoning at test time. It might be impossible to encode all patterns into parameters of statistical model. A phenomena might not admit separating data by any number of decision hyper-planes. Not only statistics but dynamics of phenomena might have to be calculated by model. Model might have to be programmed or/and trained to simulate dynamics of phenomena.
+
+  It's quite possible that the only way to train/evolve intelligent agent for hard problems in real world (such as robotics) and in social world (such as natural language understanding) might turn out to be:
+  (1) to train/evolve agent in environment which provides as much constraints for optimization as real and social world (i.e. agent has to be a robot operating in real world alongside humans);
+  (2) to train/evolve agent on problems which provide as much constraints for optimization as the hardest problems solved by organisms in real world (i.e. robot has to learn to survive without any assistance from humans) and solved by humans in social world (i.e. agent has to learn to reach goals in real world using conversations with humans as its only tool).
+
+  Note that solving many problems in science and engineering may not need computer intelligence defined above - if computers will be programmed to solve non-standard problems by humans as it is done today. But some very important (and most hyped) problems such as robotics (truly unconstrained self-driving) and natural language understanding (truly personal assistant) might not admit sufficient progress without such intelligence [http://rodneybrooks.com/forai-steps-toward-super-intelligence-ii-beyond-the-turing-test].
+
+
+
+
+## limitations
+
+  https://blog.keras.io/the-limitations-of-deep-learning.html
+  https://www.alexirpan.com/2018/02/14/rl-hard.html
+  https://thebestschools.org/magazine/limits-of-modern-ai
+  https://linkedin.com/pulse/scary-ai-compiler-more-dangerous-gareth-edwards
+  https://youtube.com/watch?v=HOlfunVaehY
+
+  Deep Learning methods are very non-robust in image understanding tasks [https://youtube.com/watch?v=9497PCSNss4] [https://blog.piekniewski.info/2016/08/12/how-close-are-we-to-vision] [https://blog.piekniewski.info/2016/08/18/adversarial-red-flag] [https://blog.piekniewski.info/2016/12/29/can-a-deep-net-see-a-cat] [https://petewarden.com/2018/07/06/what-image-classifiers-can-do-about-unknown-objects].
+  Deep Learning methods haven't come even close to replacing radiologists [https://twitter.com/lpachter/status/999772075622453249] [https://twitter.com/zacharylipton/status/999395902996516865] [https://medium.com/@jrzech/what-are-radiological-deep-learning-models-actually-learning-f97a546c5b98].
+  Deep Learning methods are very non-robust in text understanding tasks [https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing] [https://motherboard.vice.com/en_us/article/j5npeg/why-is-google-translate-spitting-out-sinister-religious-prophecies].
+  Deep Learning methods can't solve questions from school science tests significantly better than text search based methods [http://data.allenai.org/arc/challenge-train] [https://arxiv.org/abs/1803.05457].
+  Deep Learning methods can't pass first levels of the hardest Atari game - it requires abstracting and reasoning from agent [https://youtube.com/watch?v=_zbg9rs5QZY] [https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3] [https://alexirpan.com/2018/06/27/dota-2-five.html].
+
+  "Measuring the Tendency of CNNs to Learn Surface Statistical Regularities" [https://arxiv.org/abs/1711.11561]
+  "Confounding Variables Can Degrade Generalization Performance of Radiological Deep Learning Models" [https://arxiv.org/abs/1807.00431]
+  "One Pixel Attack for Fooling Deep Neural Networks" [https://arxiv.org/abs/1710.08864]
+  "A Rotation and a Translation Suffice: Fooling CNNs with Simple Transformations" [https://arxiv.org/abs/1712.02779]
+  "Semantic Adversarial Examples" [https://arxiv.org/abs/1804.00499]
+  "Why Do Deep Convolutional Networks Generalize so Poorly to Small Image Transformations?" [https://arxiv.org/abs/1805.12177]
+  "The Elephant in the Room" [https://arxiv.org/abs/1808.03305]
+  "Strike (with) a Pose: Neural Networks Are Easily Fooled by Strange Poses of Familiar Objects" [https://arxiv.org/abs/1811.11553]
+  "Semantically Equivalent Adversarial Rules for Debugging NLP models" [https://acl2018.org/paper/1406]
+  "On GANs and GMMs" [https://arxiv.org/abs/1805.12462]
+  "Do Deep Generative Models Know What They Don't Know?" [https://arxiv.org/abs/1810.09136]
+  "Are Generative Deep Models for Novelty Detection Truly Better?" [https://arxiv.org/abs/1807.05027]
+  "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations" [https://arxiv.org/abs/1811.12359]
+  "Simple Random Search Provides a Competitive Approach to Reinforcement Learning" [https://arxiv.org/abs/1803.07055]
+
+
+
+
+## hype
+
+  https://gizmodo.com/ibm-watson-reportedly-recommended-cancer-treatments-tha-1827868882
+  https://statnews.com/2018/07/25/ibm-watson-recommended-unsafe-incorrect-treatments
+  https://medium.com/the-ai-lab/artificial-intelligence-in-drug-discovery-is-overhyped-examples-from-astrazeneca-harvard-315d69a7f863
+  https://medium.com/the-ai-lab/ratings-of-labs-in-artificial-intelligence-for-drug-discovery-9af0ddf42490
+
+  https://cnet.com/news/alphabet-google-waymo-ceo-john-krafcik-autonomous-cars-wont-ever-be-able-to-drive-in-all-conditions
+  https://arstechnica.com/cars/2018/12/waymos-lame-public-driverless-launch-not-driverless-and-barely-public
+  https://wired.com/story/waymo-self-driving-taxi-service-launch-chandler-arizona
+  https://www.azcentral.com/story/money/business/tech/2018/12/05/phoenix-waymo-vans-how-self-driving-cars-operate-roads/2082664002
+  https://uberpeople.net/threads/waymo’s-big-ambitions-slowed-by-tech-trouble-the-information-i.281041
+  https://www.theinformation.com/articles/waymos-big-ambitions-slowed-by-tech-trouble
+  http://blog.quirkyllama.org/2018/11/what-smart-tesla-fans-get-wrong-about.html
+  https://dailykanban.com/2017/02/ca-dmv-report-sheds-new-light-misleading-tesla-autonomous-drive-video
+  https://theverge.com/2018/8/1/17641186/tesla-elon-musk-self-driving-coast-to-coast-delay
+  https://theverge.com/2018/7/13/17561484/george-hotz-comma-ai-self-driving-car-scam-diy-kit
+  https://wired.com/story/self-driving-car-faces-reality
+  https://wired.com/story/self-driving-cars-challenges
+  https://blog.piekniewski.info/2018/02/09/a-v-safety-2018-update
+
+  https://medium.com/swlh/chatbots-were-the-next-big-thing-what-happened-5fc49dd6fa61
+  https://mediapost.com/publications/article/320765/social-robot-maker-jibo-adds-to-layoffs.html
+  https://forbes.com/sites/noelsharkey/2018/11/17/mama-mia-its-sophia-a-show-robot-or-dangerous-platform-to-mislead
+
+
+  some of the most realistic people working in AI:
+  - Michael I. Jordan  [https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7] [https://youtu.be/4inIBmY8dQI?t=13m9s] [https://youtu.be/Tkl6ERLWAbA?t=3m17s]
+  - Rodney Brooks  [https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here] [http://rodneybrooks.com/the-seven-deadly-sins-of-predicting-the-future-of-ai]
+  - Philip Piekniewski  [http://blog.piekniewski.info/2016/08/02/80p_there] [https://blog.piekniewski.info/2018/06/20/rebooting-ai-postulates]
+  - Francois Chollet  [https://blog.keras.io/the-limitations-of-deep-learning.html] [https://medium.com/@francois.chollet/the-impossibility-of-intelligence-explosion-5be4a9eda6ec]
+  - John Langford  [http://hunch.net/?p=9828091] [http://hunch.net/?p=9604328]
+
+  some of not quite realistic people working in AI (not active researchers but directors):
+  - Elon Musk  [https://youtu.be/kzlUyrccbos?t=33m39s] [http://blog.quirkyllama.org/2018/11/what-smart-tesla-fans-get-wrong-about.html] [https://theverge.com/2018/2/7/16988628/elon-musk-lidar-self-driving-car-tesla] [https://wired.com/story/tesla-autopilot-why-crash-radar] [https://news.ycombinator.com/item?id=17282519] [https://youtu.be/LSX3qdy0dFg?t=28m49s]
+  - Ray Kurzweil  [https://en.wikipedia.org/wiki/Predictions_made_by_Ray_Kurzweil]
+  - Andrew Ng  [https://twitter.com/andrewyng/status/788548053745569792] [https://twitter.com/lpachter/status/999772075622453249] [https://twitter.com/AndrewYNg/status/993550763795378181] [http://rodneybrooks.com/bothersome-bystanders-and-self-driving-cars]
+
+
+
+
+## paths to intelligence
+
+  Facebook started move to robotics research [https://apnews.com/b313adb849064ebea5e0802291015e5e/Why-is-Facebook-keen-on-robots?-It%27s-just-the-future-of-AI].
+  Yann LeCun, chief AI scientist at Facebook: "Clearly we’re missing something in terms of how humans can learn so fast. So far the best ideas have come out of robotics."
+  Pieter Abbeel, top AI researcher in robotics: "The real world is naturally complex, so robotic AI systems have to deal with unexpected, rare events. And real-world constraints like a lack of time and the cost of keeping machinery moving push researchers to solve difficult problems."
+
+
+  Deep Learning looks like 90% of ML/AI research at the moment but conceptually it's more like 10% of ML & 1% of AI.
+  Deep Learning had been ridiculed by ML research community for lack of applicable results throughout 90s and 2000s.
+  Biologically plausible architectures like HTM had been likewise ridiculed by Deep Learning people throughout 2010s.
+
+
+  [https://hai.stanford.edu/news/the_intertwined_quest_for_understanding_biological_intelligence_and_creating_artificial_intelligence]
+
+
+  Todd Hylton
+
+	"On Thermodynamics and the Future of Computing" [https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017]
+	"Is the Universe a Product of Thermodynamic Evolution?" [https://youtube.com/watch?v=eB3m4X9xj2A]
+
+	"Fundamental principles of cortical computation: unsupervised learning with prediction, compression and feedback" [https://arxiv.org/abs/1608.06277]
+
+	executive director of Contextual Robotics Institute at UC San Diego [https://www.sdbj.com/news/2016/aug/30/hylton-named-executive-director-contextual-robotic]
+	former program manager of DARPA's program in neuromorphic computing [http://jacobsschool.ucsd.edu/faculty/faculty_bios/findprofile.sfe?department=ece&fmp_recid=416]
+
+
+  Filip Piekniewski
+
+	http://blog.piekniewski.info/2018/06/20/rebooting-ai-postulates
+	https://datascienceathome.podbean.com/e/get-ready-for-ai-winter
+
+	http://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent
+	http://blog.piekniewski.info/2016/08/09/intelligence-is-real
+	http://blog.piekniewski.info/2016/11/15/ai-and-the-ludic-fallacy
+	http://blog.piekniewski.info/2016/08/23/the-peculiar-perception-of-the-problem-of-perception
+	http://blog.piekniewski.info/2016/11/01/statistics-and-dynamics
+	http://blog.piekniewski.info/2016/11/03/reactive-vs-predictive-ai
+	http://blog.piekniewski.info/2017/11/18/mt-intelligence
+	http://blog.piekniewski.info/2016/11/30/learning-physics-is-the-way-to-go
+
+	"The Predictive Vision Model - A Different Way of Doing Deep Learning" (PVM talk) [https://youtube.com/watch?v=rBtlQM_pPi0]
+
+	"Unsupervised Learning from Continuous Video in a Scalable Predictive Recurrent Network" (PVM paper) [http://blog.piekniewski.info/2016/11/04/predictive-vision-in-a-nutshell] [https://youtube.com/watch?v=4nOP828y3UM] [https://arxiv.org/abs/1607.06854]
+
+	"By solving a more general problem of physical prediction (to distinguish it from statistical prediction), the input and label get completely balanced and the problem of human selection disappears altogether. The label in such case is just a time shifted version of the raw input signal. More data means more signal, means better approximation of the actual data manifold. And since that manifold originated in the physical reality (no, it has not been sampled from a set of independent and identically distributed gaussians), it is no wonder that using physics as the training paradigm may help to unravel it correctly. Moreover, adding parameters should be balanced out by adding more constraints (more training signal)."
+	"That way, we should be able to build a very complex system with billions of parameters (memories) yet operating on a very simple and powerful principle. The complexity of the real signal and wealth of high dimensional training data may prevent it from ever finding "cheap", spurious solutions. But the cost we have to pay, is that we will need to solve a more general and complex task, which may not easily and directly translate to anything of practical importance, not instantly at least."
+
+	Todd Hylton, Csaba Petre, Patryk Laurent were also working on PVM at Brain Corporation as part of DARPA Cortical Processor contract
+
+	problems with funding -
+		https://youtu.be/rBtlQM_pPi0?t=1h15m44s
+	in search for funding -
+		https://twitter.com/filippie509/status/846729519268593665
+	current progress -
+		https://twitter.com/filippie509/status/996521722793750528
+		https://blog.piekniewski.info/2016/11/04/predictive-vision-in-a-nutshell/#comment-132
+	plans -
+		https://youtu.be/rBtlQM_pPi0?t=1h14m53s
+		"implementation for neuromorphic chips expected to be more performant than implementation for GPUs"
+
+	Detecting anomalies in data access is a suitable application for model aiming to predict dynamics such as PVM.
+
+
+  Karl Friston
+
+	"The Free-Energy Principle: A Unified Brain Theory?" [https://www.researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138]
+	"Action and Behavior: a Free-energy Formulation" [https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf]
+	"Computational Mechanisms of Curiosity and Goal-directed Exploration" [https://biorxiv.org/content/early/2018/09/07/411272]
+	"Expanding the Active Inference Landscape: More Intrinsic Motivations in the Perception-Action Loop" [https://arxiv.org/abs/1806.08083] [https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework]
+
+	"Free Energy Principle" [https://youtube.com/watch?v=NIu_dJGyIQI]
+	"Free Energy and Active Inference" [https://youtube.com/watch?v=dLXKFA33SSM]
+	"Active Inference and Artificial Curiosity" [https://youtube.com/watch?v=VHJiTO5ZlYA] [https://youtube.com/watch?v=Y1egnoCWgUg]
+
+	"Uncertainty and Active Inference" [https://slideslive.com/38909755/uncertainty-and-active-inference]
+
+	"Active Inference for Anomaly Detection" [https://youtube.com/watch?v=awgY90DStPE]
+
+	introduction for free energy principle [https://umsu.de/wo/2013/600]
+	introduction for active inference [http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy]
+	tutorial on active inference [https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc]
+
+
+  Alex Wissner-Gross and Cameron Freer
+
+	"Causal Entropic Forces" [http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf]
+
+	"An Equation for Intelligence" [https://youtube.com/watch?v=PL0Xq0FFQZ4]
+	"The Physics of Artificial General Intelligence" [https://youtube.com/watch?v=dIUq3LYLEQo]
+
+	"Intelligent system needs to optimize future causal entropy, or to put it in plain language, maximize the available future choices. Which in turn means minimizing all the unpleasant situations with very few choices. This makes sense from evolutionary point of view as it is consistent with the ability to survive, it is consistent with what we see among humans (collecting wealth and hedging on multiple outcomes of unpredictable things) and generates reasonable behavior in several simple game situations."
+
+
+  Susanne Still
+
+	"The Thermodynamics of Prediction" [https://arxiv.org/abs/1203.3271]
+
+	"Optimal Information Processing" [https://youtube.com/watch?v=RrMitURpdq0]
+	"Optimal Information Processing: Dissipation and Irrelevant Information" [https://youtube.com/watch?v=XCT3ebFqreY]
+	"Thermodynamic Limits of Information Processing" [https://youtube.com/watch?v=ufywxxu7jww]
+
+	"All systems perform computations by means of responding to their environment. In particular, living systems compute, on a variety of length- and time-scales, future expectations based on their prior experience. Most biological computation is fundamentally a nonequilibrium process, because a preponderance of biological machinery in its natural operation is driven far from thermodynamic equilibrium."
+	"Physical systems evolve via a sequence of input stimuli that drive the system out of equilibrium and followed by relaxation to a thermal bath."
+
+
+  Juergen Schmidhuber
+
+	"Theory of Artificial Curiosity and Creativity" [https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity]
+
+	"The Simple Algorithmic Principle behind Creativity, Art, Science, Music, Humor" [https://youtube.com/watch?v=h7F5sCLIbKQ]
+
+	https://bloomberg.com/news/features/2018-05-15/google-amazon-and-facebook-owe-j-rgen-schmidhuber-a-fortune
+	https://dropbox.com/s/1b4ctgadio6naey/NNAISence.txt
+
+
+
+
+  <brylevkirill@gmail.com>
