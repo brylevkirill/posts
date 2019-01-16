@@ -81,7 +81,7 @@
 
 
 
-### limitations
+### progress
 
   Arguably during Deep Learning renaissance period there hasn't been progress in real-world problems such as robotics, language understanding, healthcare nearly as significant as in fixed games running in simulated environments.
 
@@ -118,7 +118,7 @@
 
 
 
-### paths to intelligence
+### directions
 
   *Juergen Schmidhuber*
 
