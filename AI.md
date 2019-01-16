@@ -74,8 +74,8 @@
 
   Long tails might be not learnable statistically and require reasoning at test time. It might be impossible to encode all patterns into parameters of statistical model. A phenomena might not admit separating data by any number of decision hyper-planes. Not only statistics but dynamics of phenomena might have to be calculated by model. Model might have to be programmed or/and trained to simulate dynamics of phenomena.
 
-  It's quite possible that the only way to train/evolve intelligent agent for hard problems in real world (such as robotics) and in social world (such as natural language understanding) might turn out to be:
-  (1) to train/evolve agent in environment which provides as much constraints for optimization as real and social world (i.e. agent has to be a robot operating in real world alongside humans);
+  It's quite possible that the only way to train/evolve intelligent agent for hard problems in real world (such as robotics) and in social world (such as natural language understanding) might turn out to be:  
+  (1) to train/evolve agent in environment which provides as much constraints for optimization as real and social world (i.e. agent has to be a robot operating in real world alongside humans);  
   (2) to train/evolve agent on problems which provide as much constraints for optimization as the hardest problems solved by organisms in real world (i.e. robot has to learn to survive without any assistance from humans) and solved by humans in social world (i.e. agent has to learn to reach goals in real world using conversations with humans as its only tool).
 
 
@@ -85,35 +85,35 @@
 
   Arguably during Deep Learning renaissance period there hasn't been progress in real-world problems such as robotics, language understanding, healthcare nearly as significant as in fixed games running in simulated environments.
 
-  Opinions on AI progress from some of the most realistic researchers:
-*Michael I. Jordan*  [[32]](https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7) [[33]](https://youtu.be/4inIBmY8dQI?t=13m9s) [[34]](https://youtu.be/Tkl6ERLWAbA?t=3m17s)
-*Rodney Brooks*  [[35]](https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here) [[36]](http://rodneybrooks.com/the-seven-deadly-sins-of-predicting-the-future-of-ai)
-*Philip Piekniewski*  [[37]](http://blog.piekniewski.info/2016/08/02/80p_there) [[38]](https://blog.piekniewski.info/2018/06/20/rebooting-ai-postulates)
-*Francois Chollet*  [[39]](https://blog.keras.io/the-limitations-of-deep-learning.html) [[40]](https://medium.com/@francois.chollet/the-impossibility-of-intelligence-explosion-5be4a9eda6ec)
-*John Langford*  [[41]](http://hunch.net/?p=9828091) [[42]](http://hunch.net/?p=9604328)
-*Alex Irpan*  [[43]](https://www.alexirpan.com/2018/02/14/rl-hard.html)
+  Opinions on AI progress from some of the most realistic researchers:  
+  *Michael I. Jordan*  [[32]](https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7) [[33]](https://youtu.be/4inIBmY8dQI?t=13m9s) [[34]](https://youtu.be/Tkl6ERLWAbA?t=3m17s)  
+  *Rodney Brooks*  [[35]](https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here) [[36]](http://rodneybrooks.com/the-seven-deadly-sins-of-predicting-the-future-of-ai)  
+  *Philip Piekniewski*  [[37]](http://blog.piekniewski.info/2016/08/02/80p_there) [[38]](https://blog.piekniewski.info/2018/06/20/rebooting-ai-postulates)  
+  *Francois Chollet*  [[39]](https://blog.keras.io/the-limitations-of-deep-learning.html) [[40]](https://medium.com/@francois.chollet/the-impossibility-of-intelligence-explosion-5be4a9eda6ec)  
+  *John Langford*  [[41]](http://hunch.net/?p=9828091) [[42]](http://hunch.net/?p=9604328)  
+  *Alex Irpan*  [[43]](https://www.alexirpan.com/2018/02/14/rl-hard.html)  
 
 
-  Deep Learning methods are very non-robust in image understanding tasks [[44]](https://youtube.com/watch?v=9497PCSNss4) [[45]](https://blog.piekniewski.info/2016/08/12/how-close-are-we-to-vision) [[46]](https://blog.piekniewski.info/2016/08/18/adversarial-red-flag) [[47]](https://blog.piekniewski.info/2016/12/29/can-a-deep-net-see-a-cat) [[48]](https://petewarden.com/2018/07/06/what-image-classifiers-can-do-about-unknown-objects).
-  Deep Learning methods haven't come even close to replacing radiologists [[49]](https://twitter.com/lpachter/status/999772075622453249) [[50]](https://twitter.com/zacharylipton/status/999395902996516865) [[51]](https://medium.com/@jrzech/what-are-radiological-deep-learning-models-actually-learning-f97a546c5b98).
-  Deep Learning methods are very non-robust in text understanding tasks [[52]](https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing) [[53]](https://motherboard.vice.com/en_us/article/j5npeg/why-is-google-translate-spitting-out-sinister-religious-prophecies).
-  Deep Learning methods can't solve questions from school science tests significantly better than text search based methods [[54]](http://data.allenai.org/arc/challenge-train) [[55]](https://arxiv.org/abs/1803.05457).
-  Deep Learning methods can't pass first levels of the hardest Atari game - it requires abstracting and reasoning from agent [[56]](https://youtube.com/watch?v=_zbg9rs5QZY) [[57]](https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3) [[58]](https://alexirpan.com/2018/06/27/dota-2-five.html).
+  Deep Learning methods are very non-robust in image understanding tasks [[44]](https://youtube.com/watch?v=9497PCSNss4) [[45]](https://blog.piekniewski.info/2016/08/12/how-close-are-we-to-vision) [[46]](https://blog.piekniewski.info/2016/08/18/adversarial-red-flag) [[47]](https://blog.piekniewski.info/2016/12/29/can-a-deep-net-see-a-cat) [[48]](https://petewarden.com/2018/07/06/what-image-classifiers-can-do-about-unknown-objects).  
+  Deep Learning methods haven't come even close to replacing radiologists [[49]](https://twitter.com/lpachter/status/999772075622453249) [[50]](https://twitter.com/zacharylipton/status/999395902996516865) [[51]](https://medium.com/@jrzech/what-are-radiological-deep-learning-models-actually-learning-f97a546c5b98).  
+  Deep Learning methods are very non-robust in text understanding tasks [[52]](https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing) [[53]](https://motherboard.vice.com/en_us/article/j5npeg/why-is-google-translate-spitting-out-sinister-religious-prophecies).  
+  Deep Learning methods can't solve questions from school science tests significantly better than text search based methods [[54]](http://data.allenai.org/arc/challenge-train) [[55]](https://arxiv.org/abs/1803.05457).  
+  Deep Learning methods can't pass first levels of the hardest Atari game - it requires abstracting and reasoning from agent [[56]](https://youtube.com/watch?v=_zbg9rs5QZY) [[57]](https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3) [[58]](https://alexirpan.com/2018/06/27/dota-2-five.html).  
 
-  ["Measuring the Tendency of CNNs to Learn Surface Statistical Regularities"](https://arxiv.org/abs/1711.11561)
-  ["Confounding Variables Can Degrade Generalization Performance of Radiological Deep Learning Models"](https://arxiv.org/abs/1807.00431)
-  ["One Pixel Attack for Fooling Deep Neural Networks"](https://arxiv.org/abs/1710.08864)
-  ["A Rotation and a Translation Suffice: Fooling CNNs with Simple Transformations"](https://arxiv.org/abs/1712.02779)
-  ["Semantic Adversarial Examples"](https://arxiv.org/abs/1804.00499)
-  ["Why Do Deep Convolutional Networks Generalize so Poorly to Small Image Transformations?"](https://arxiv.org/abs/1805.12177)
-  ["The Elephant in the Room"](https://arxiv.org/abs/1808.03305)
-  ["Strike (with) a Pose: Neural Networks Are Easily Fooled by Strange Poses of Familiar Objects"](https://arxiv.org/abs/1811.11553)
-  ["Semantically Equivalent Adversarial Rules for Debugging NLP models"](https://acl2018.org/paper/1406)
-  ["On GANs and GMMs"](https://arxiv.org/abs/1805.12462)
-  ["Do Deep Generative Models Know What They Don't Know?"](https://arxiv.org/abs/1810.09136)
-  ["Are Generative Deep Models for Novelty Detection Truly Better?"](https://arxiv.org/abs/1807.05027)
-  ["Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"](https://arxiv.org/abs/1811.12359)
-  ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055)
+  ["Measuring the Tendency of CNNs to Learn Surface Statistical Regularities"](https://arxiv.org/abs/1711.11561)  
+  ["Confounding Variables Can Degrade Generalization Performance of Radiological Deep Learning Models"](https://arxiv.org/abs/1807.00431)  
+  ["One Pixel Attack for Fooling Deep Neural Networks"](https://arxiv.org/abs/1710.08864)  
+  ["A Rotation and a Translation Suffice: Fooling CNNs with Simple Transformations"](https://arxiv.org/abs/1712.02779)  
+  ["Semantic Adversarial Examples"](https://arxiv.org/abs/1804.00499)  
+  ["Why Do Deep Convolutional Networks Generalize so Poorly to Small Image Transformations?"](https://arxiv.org/abs/1805.12177)  
+  ["The Elephant in the Room"](https://arxiv.org/abs/1808.03305)  
+  ["Strike (with) a Pose: Neural Networks Are Easily Fooled by Strange Poses of Familiar Objects"](https://arxiv.org/abs/1811.11553)  
+  ["Semantically Equivalent Adversarial Rules for Debugging NLP models"](https://acl2018.org/paper/1406)  
+  ["On GANs and GMMs"](https://arxiv.org/abs/1805.12462)  
+  ["Do Deep Generative Models Know What They Don't Know?"](https://arxiv.org/abs/1810.09136)  
+  ["Are Generative Deep Models for Novelty Detection Truly Better?"](https://arxiv.org/abs/1807.05027)  
+  ["Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"](https://arxiv.org/abs/1811.12359)  
+  ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055)  
 
 
 
@@ -124,11 +124,11 @@
 
 > "Data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
 
-  ["The Simple Algorithmic Principle behind Creativity, Art, Science, Music, Humor"](https://youtube.com/watch?v=h7F5sCLIbKQ)
-  ["Formal Theory of Fun and Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf)
+  ["The Simple Algorithmic Principle behind Creativity, Art, Science, Music, Humor"](https://youtube.com/watch?v=h7F5sCLIbKQ)  
+  ["Formal Theory of Fun and Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf)  
 
-  ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360)
-  ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf)
+  ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360)  
+  ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf)  
 
 
   *Filip Piekniewski*
@@ -137,16 +137,16 @@
 
   ["Predictive Vision Model - A Different Way of Doing Deep Learning"](https://youtube.com/watch?v=rBtlQM_pPi0)
 
-  ["Rebooting AI - Postulates"](http://blog.piekniewski.info/2018/06/20/rebooting-ai-postulates)
-  ["Intelligence Confuses The Intelligent"](http://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent)
-  ["Intelligence Is Real"](http://blog.piekniewski.info/2016/08/09/intelligence-is-real)
-  ["AI And The Ludic Fallacy"](http://blog.piekniewski.info/2016/11/15/ai-and-the-ludic-fallacy)
-  ["The Peculiar Perception Of The Problem Of Perception"](http://blog.piekniewski.info/2016/08/23/the-peculiar-perception-of-the-problem-of-perception)
-  ["Statistics And Dynamics"](http://blog.piekniewski.info/2016/11/01/statistics-and-dynamics)
-  ["Reactive Vs Predictive AI"](http://blog.piekniewski.info/2016/11/03/reactive-vs-predictive-ai)
-  ["Mt. Intelligence"](http://blog.piekniewski.info/2017/11/18/mt-intelligence)
-  ["Learning Physics Is The Way To Go"](http://blog.piekniewski.info/2016/11/30/learning-physics-is-the-way-to-go)
-  ["Predictive Vision In A Nutshell"](http://blog.piekniewski.info/2016/11/04/predictive-vision-in-a-nutshell)
+  ["Rebooting AI - Postulates"](http://blog.piekniewski.info/2018/06/20/rebooting-ai-postulates)  
+  ["Intelligence Confuses The Intelligent"](http://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent)  
+  ["Intelligence Is Real"](http://blog.piekniewski.info/2016/08/09/intelligence-is-real)  
+  ["AI And The Ludic Fallacy"](http://blog.piekniewski.info/2016/11/15/ai-and-the-ludic-fallacy)  
+  ["The Peculiar Perception Of The Problem Of Perception"](http://blog.piekniewski.info/2016/08/23/the-peculiar-perception-of-the-problem-of-perception)  
+  ["Statistics And Dynamics"](http://blog.piekniewski.info/2016/11/01/statistics-and-dynamics)  
+  ["Reactive Vs Predictive AI"](http://blog.piekniewski.info/2016/11/03/reactive-vs-predictive-ai)  
+  ["Mt. Intelligence"](http://blog.piekniewski.info/2017/11/18/mt-intelligence)  
+  ["Learning Physics Is The Way To Go"](http://blog.piekniewski.info/2016/11/30/learning-physics-is-the-way-to-go)  
+  ["Predictive Vision In A Nutshell"](http://blog.piekniewski.info/2016/11/04/predictive-vision-in-a-nutshell)  
 
   ["Unsupervised Learning from Continuous Video in a Scalable Predictive Recurrent Network"](https://arxiv.org/abs/1607.06854)
 
@@ -155,8 +155,8 @@
 
 > "The primary problem in computing today is that computers cannot organize themselves: trillions of degrees of freedom doing the same stuff over and over, narrowly focused rudimentary AI capabilities. Our mechanistic approach to the AI problem is ill-suited to complex real-world problems: machines are the sum of their parts and disconnected from the world except through us, the world is not a machine. Thermodynamics drives the evolution of everything. Thermodynamic evolution is the missing, unifying concept in computing systems. Thermodynamic evolution supposes that all organization spontaneously emerges in order to use sources of free energy in the universe and that there is competition for this energy. Thermodynamic evolution is second law of thermodynamics, except that it adds the idea that in order for entropy to increase an organization must emerge that makes it possible to access free energy. The first law of thermodynamics implies that there is competition for energy."
 
-  ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017)
-  ["Is the Universe a Product of Thermodynamic Evolution?"](https://youtube.com/watch?v=eB3m4X9xj2A)
+  ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017)  
+  ["Is the Universe a Product of Thermodynamic Evolution?"](https://youtube.com/watch?v=eB3m4X9xj2A)  
 
   ["Fundamental principles of cortical computation: unsupervised learning with prediction, compression and feedback"](https://arxiv.org/abs/1608.06277)
 
@@ -165,26 +165,26 @@
 
 > "The free energy principle seems like an attempt to unify perception, cognition, homeostasis, and action. Free energy is a mathematical concept that represents the failure of some things to match other things they’re supposed to be predicting. The brain tries to minimize its free energy with respect to the world, ie minimize the difference between its models and reality. Sometimes it does that by updating its models of the world. Other times it does that by changing the world to better match its models. Perception and cognition are both attempts to create accurate models that match the world, thus minimizing free energy. Homeostasis and action are both attempts to make reality match mental models. Action tries to get the organism’s external state to match a mental model. Homeostasis tries to get the organism’s internal state to match a mental model. Since even bacteria are doing something homeostasis-like, all life shares the principle of being free energy minimizers. So life isn’t doing four things – perceiving, thinking, acting, and maintaining homeostasis. It’s really just doing one thing – minimizing free energy – in four different ways – with the particular way it implements this in any given situation depending on which free energy minimization opportunities are most convenient."
 
-  ["Free Energy Principle"](https://youtube.com/watch?v=NIu_dJGyIQI)
-  ["Free Energy and Active Inference"](https://youtube.com/watch?v=dLXKFA33SSM)
-  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=Y1egnoCWgUg)
-  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=VHJiTO5ZlYA)
-  ["Uncertainty and Active Inference"](https://slideslive.com/38909755/uncertainty-and-active-inference)
+  ["Free Energy Principle"](https://youtube.com/watch?v=NIu_dJGyIQI)  
+  ["Free Energy and Active Inference"](https://youtube.com/watch?v=dLXKFA33SSM)  
+  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=Y1egnoCWgUg)  
+  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=VHJiTO5ZlYA)  
+  ["Uncertainty and Active Inference"](https://slideslive.com/38909755/uncertainty-and-active-inference)  
 
-  [introduction](http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy) to free energy minimization
-  [tutorial](https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc) on active inference
+  [introduction](http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy) to free energy minimization  
+  [tutorial](https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc) on active inference  
 
-  ["The Free-Energy Principle: A Unified Brain Theory?"](https://www.researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138)
-  ["Action and Behavior: a Free-energy Formulation"](https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf)
-  ["Computational Mechanisms of Curiosity and Goal-directed Exploration"](https://biorxiv.org/content/early/2018/09/07/411272)
-  ["Expanding the Active Inference Landscape: More Intrinsic Motivations in the Perception-Action Loop"](https://arxiv.org/abs/1806.08083)
+  ["The Free-Energy Principle: A Unified Brain Theory?"](https://www.researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138)  
+  ["Action and Behavior: a Free-energy Formulation"](https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf)  
+  ["Computational Mechanisms of Curiosity and Goal-directed Exploration"](https://biorxiv.org/content/early/2018/09/07/411272)  
+  ["Expanding the Active Inference Landscape: More Intrinsic Motivations in the Perception-Action Loop"](https://arxiv.org/abs/1806.08083)  
 
 
   *Alex Wissner-Gross*
 
 > "Intelligent system needs to optimize future causal entropy, or to put it in plain language, maximize the available future choices. Which in turn means minimizing all the unpleasant situations with very few choices. This makes sense from evolutionary point of view as it is consistent with the ability to survive, it is consistent with what we see among humans (collecting wealth and hedging on multiple outcomes of unpredictable things) and generates reasonable behavior in several simple game situations."
 
-  ["An Equation for Intelligence"](https://youtube.com/watch?v=PL0Xq0FFQZ4)
+  ["An Equation for Intelligence"](https://youtube.com/watch?v=PL0Xq0FFQZ4)  
   ["The Physics of Artificial General Intelligence"](https://youtube.com/watch?v=dIUq3LYLEQo)  
 
   ["Causal Entropic Forces"](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf)
@@ -194,9 +194,9 @@
 
 > "All systems perform computations by means of responding to their environment. In particular, living systems compute, on a variety of length- and time-scales, future expectations based on their prior experience. Most biological computation is fundamentally a nonequilibrium process, because a preponderance of biological machinery in its natural operation is driven far from thermodynamic equilibrium. Physical systems evolve via a sequence of input stimuli that drive the system out of equilibrium and followed by relaxation to a thermal bath."
 
-  ["Optimal Information Processing"](https://youtube.com/watch?v=RrMitURpdq0)
-  ["Optimal Information Processing: Dissipation and Irrelevant Information"](https://youtube.com/watch?v=XCT3ebFqreY)
-  ["Thermodynamic Limits of Information Processing"](https://youtube.com/watch?v=ufywxxu7jww)
+  ["Optimal Information Processing"](https://youtube.com/watch?v=RrMitURpdq0)  
+  ["Optimal Information Processing: Dissipation and Irrelevant Information"](https://youtube.com/watch?v=XCT3ebFqreY)  
+  ["Thermodynamic Limits of Information Processing"](https://youtube.com/watch?v=ufywxxu7jww)  
 
   ["The Thermodynamics of Prediction"](https://arxiv.org/abs/1203.3271)
 
