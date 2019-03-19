@@ -1,3 +1,8 @@
+  [https://habr.com/en/post/436458]
+
+---
+
+
   The biggest issue with AI is not that it is stupid but lack of definition for intelligence and hence lack of measure for it [[0]](https://arxiv.org/abs/0712.3329) [[1]](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) [[2]](http://blog.piekniewski.info/2016/08/09/intelligence-is-real).
 
   Turing test is not a good measure because gorilla Koko wouldn't pass but she could solve more problems than lots of disabled human beings [[3]](http://rodneybrooks.com/forai-steps-toward-super-intelligence-ii-beyond-the-turing-test) [[4]](http://rodneybrooks.com/forai-steps-toward-super-intelligence-iv-things-to-work-on-now).
