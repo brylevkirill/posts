@@ -1,4 +1,4 @@
-  [https://habr.com/en/post/436458]
+  https://habr.com/en/post/436458
 
 ---
 
