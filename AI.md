@@ -9,7 +9,7 @@
 
   It is quite possible that people in the future will wonder why so many people back in 2019 thought playing Go and other fixed games in simulated environments after long training had anything to do with intelligence.
 
-  Intelligence is more about adapting/transfering old knowledge to new task (playing Quake Arena quite good without any training after mastering Doom) than it is about compressing experience into heuristics to predict outcome and searching action in given position to maximize predicted outcome value (playing Quake Arena quite good after million games after mastering Doom).
+  Intelligence is more about adapting/transfering old knowledge to new task (playing Quake Arena quite good without any training after mastering Doom) than it is about compressing experience into heuristics to predict outcome and determining action to maximize predicted outcome value in given state (playing Quake Arena quite good after million games after mastering Doom).
 
   Human intelligence is about ability to adapt to physical and social world [[4a]](https://amazon.com/Measure-All-Minds-Evaluating-Intelligence/dp/1107153018), and playing Go is a particular adaptation performed by human intelligence, and developing algorithm to learn to play Go is more performant adaptation, and developing mathematical theory to play Go might be even more performant.
 
@@ -19,9 +19,9 @@
 
   The second biggest issue with AI is lack of robustness in a long tail of uncommon cases (and critical ones in medicine, self-driving vehicles, finance) which presently can't be handled with accuracy even close to acceptable [[5]](http://blog.piekniewski.info/2016/11/15/ai-and-the-ludic-fallacy) [[6]](http://blog.piekniewski.info/2017/01/13/outside-the-box) [[7]](http://blog.piekniewski.info/2017/07/27/measuring-performance-ml) [[8]](http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world) [[9]](https://blog.piekniewski.info/2017/04/03/the-complexity-of-simplicity).
 
-  Complex models exploit any patterns that relate input to output variables but some patterns might not hold for cases poorly covered by training data. >99% of healthcare applications use simple models such as logistic regression with heavily engineered features - for better robustness on outliers [[10a]](https://www.sciencedirect.com/science/article/pii/S0895435618310813) [[10b]](https://www.thelancet.com/action/showPdf?pii=S2589-5370%2819%2930037-9) [[10c]](https://twitter.com/david_sontag/status/1009629318635491330). The clear trend in popular web services is more feature engineering (converting domain knowledge into code to compute statistics, obtaining better performance using more relevant knowledge) - not more sophisticated Deep Learning models (mostly used in production for applications where feature engineering might not lead to better performance such as sensoric applications).
+  Complex models exploit any patterns that relate input to output variables but some patterns might not hold for cases poorly covered by training data. >99% of healthcare applications use simple models such as logistic regression with heavily engineered features - for better robustness on outliers [[10a]](https://www.sciencedirect.com/science/article/pii/S0895435618310813) [[10b]](https://www.thelancet.com/action/showPdf?pii=S2589-5370%2819%2930037-9) [[10c]](https://twitter.com/david_sontag/status/1009629318635491330). The clear trend in popular web services is more feature engineering (converting domain knowledge into code to compute statistics, obtaining better performance using more relevant knowledge) - not more complex Deep Learning models.
 
-  For some problems such as games in simulated environments like Go agent knows true model of environment and generates training data. Discovering interesting properties of that data isn't intelligent - for most real-world problems discovering true model is the point.
+  For an agent in simulated environment like Go or Quake, true model of environment is either known or available so that agent can generate any amount of training data. Finding out correlations in that data isn't intelligent - for real-world problems discovering true model is key.
 
   For an organism, real world is not a fixed game with known environment and rules such as Go or Quake but a game with environment and rules largerly unknown and always changing. It has to adapt to unexpected changes of environment and rules including changes caused by adversaries. It has to be capable of wide autonomy as opposed to merely automation necessary to play some fixed game.
 
@@ -48,7 +48,7 @@
 
   Google Duplex must be a heavily engineered solution for very narrow domains and tasks which involves huge amount of human labor to write rules and to label data. Google was reported to employ 100 of PhD linguists working just on rules and data for question answering in Google Search and Assistant [[17]](https://wired.com/2016/11/googles-search-engine-can-now-answer-questions-human-help).
 
-  IBM Debater is a heavily engineered solution for finding and summarizing texts relevant to given topic (without state-of-the-art results on academic benchmarks for summarization) [[18]](https://scholar.google.com/citations?user=KjvrNGMAAAAJ&sortby=pubdate) [[19]](https://youtube.com/watch?v=TYJ3iwW59_w) [[20]](https://youtube.com/watch?v=8Xd4-cV9d74). It can't answer opponent's arbitrary questions about its own arguments because it neither has or learns any model of domain it argues about.
+  IBM Debater is a heavily engineered solution for finding and summarizing texts relevant to given topic [[18]](https://scholar.google.com/citations?user=KjvrNGMAAAAJ&sortby=pubdate) [[19]](https://youtube.com/watch?v=TYJ3iwW59_w) [[20]](https://youtube.com/watch?v=8Xd4-cV9d74). It can't answer opponent's arbitrary questions about its own arguments because it neither has or learns any model of domain it argues about.
 
 
 
