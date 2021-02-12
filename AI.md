@@ -19,7 +19,7 @@
 
   The second biggest issue with AI is lack of robustness in a long tail of unprecedented situations (including critical ones in healthcare [[6a]](https://scientificamerican.com/article/artificial-intelligence-is-rushing-into-patient-care-and-could-raise-risks), self-driving vehicles, finance) which at present can't be handled with accuracy even close to acceptable [[6b]](http://blog.piekniewski.info/2017/01/13/outside-the-box) [[6c]](http://blog.piekniewski.info/2017/07/27/measuring-performance-ml) [[6d]](http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world) [[6e]](https://blog.piekniewski.info/2017/04/03/the-complexity-of-simplicity) [[6f]](https://youtu.be/uyZOcUDhIbY?t=17m27s).
 
-  Deep Learning models exploit patterns relating input variables to output ones, but a pattern might not hold at all for a case poorly covered by training data [section "progress"] [[7a]](https://blog.piekniewski.info/2019/04/07/deep-learning-and-shallow-data) [[7b]](http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world) [[7c]](https://blog.keras.io/the-limitations-of-deep-learning.html) [[7d]](https://thebestschools.org/magazine/limits-of-modern-ai). In order to avoid spurious correlations and to gain robustness on outliers, >99% of healthcare applications use simple models like logistic regression (domain knowledge is converted into code to compute statistics as features), while the final say is on a doctor with a model of the field in his brain [[8a]](https://www.sciencedirect.com/science/article/pii/S0895435618310813) [[8b]](https://twitter.com/david_sontag/status/1009629318635491330).
+  Deep Learning models exploit patterns relating input variables to output ones, but a pattern might not hold at all for a case poorly covered by training data [section "progress"] [[7a]](https://technologyreview.com/2020/11/18/1012234/training-machine-learning-broken-real-world-heath-nlp-computer-vision) [[7b]](https://blog.piekniewski.info/2019/04/07/deep-learning-and-shallow-data) [[7c]](http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world) [[7d]](https://blog.keras.io/the-limitations-of-deep-learning.html) [[7e]](https://thebestschools.org/magazine/limits-of-modern-ai). In order to avoid spurious correlations and to gain robustness on outliers, >99% of healthcare applications use simple models like logistic regression (domain knowledge is converted into code to compute statistics as features), while the final say is on a doctor with a model of the field in his brain [[8a]](https://www.sciencedirect.com/science/article/pii/S0895435618310813) [[8b]](https://twitter.com/david_sontag/status/1009629318635491330).
 
   For an agent in simulated environment like Go or Quake, true model of environment is either known or available so that agent can generate any amount of training data in order to learn how to act optimally in any situation. Finding out correlations in that data isn't intelligent — for real-world problems discovering true model is key [[9a]](http://blog.piekniewski.info/2016/11/03/reactive-vs-predictive-ai) [[9b]](https://blog.piekniewski.info/2016/11/01/statistics-and-dynamics) [[9c]](https://blog.keras.io/the-limitations-of-deep-learning.html) [[9d]](http://emanuelderman.com/the-limitations-of-machine-learning-in-finding-the-laws-of-nature) [[9e]](https://facebook.com/icml.imls/videos/2265408103721327?t=1094).
 
@@ -66,11 +66,11 @@
 
 ### obstacles
 
-  The first biggest obstacle to applications in the real-world environments as opposed to simulated ones seems to be underconstrained objectives for optimization in learning the model of environment [[23a]](https://slideslive.com/38923124/nonsupervised-learning-and-decision-making?t=330). Any sufficiently complex model trained with insufficiently constrained objective will exploit any pattern found in training data that relates input to target variables but spurious correlations won't necessarily generalize to testing data [section "progress"] [[23b]](https://blog.piekniewski.info/2019/04/07/deep-learning-and-shallow-data) [[23c]](http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world) [[23d]](https://blog.keras.io/the-limitations-of-deep-learning.html) [[23e]](https://thebestschools.org/magazine/limits-of-modern-ai). Even a billion examples don't constrain optimization sufficiently and don't lead to major performance gains in image recognition [[24a]](https://arxiv.org/abs/1707.02968) [[24b]](https://arxiv.org/abs/1805.00932). Agents find surprising ways to exploit simulated environments to maximize objectives not constrained enough to prevent exploits [[25a]](https://youtu.be/jAPJeJK18mw?t=10m29s) [[25b]](https://youtube.com/watch?v=-p7VhdTXA0k).
+  The first biggest obstacle to applications in the real-world environments as opposed to simulated ones seems to be underconstrained objectives for optimization in learning the model of environment [[23a]](https://slideslive.com/38923124/nonsupervised-learning-and-decision-making?t=330). Any sufficiently complex model trained with insufficiently constrained objective will exploit any pattern found in training data that relates input to target variables but spurious correlations won't necessarily generalize to testing data [section "progress"] [[23b]](https://technologyreview.com/2020/11/18/1012234/training-machine-learning-broken-real-world-heath-nlp-computer-vision) [[23c]](https://blog.piekniewski.info/2019/04/07/deep-learning-and-shallow-data) [[23d]](http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world) [[23e]](https://blog.keras.io/the-limitations-of-deep-learning.html) [[23f]](https://thebestschools.org/magazine/limits-of-modern-ai). Even a billion examples don't constrain optimization sufficiently and don't lead to major performance gains in image recognition [[24a]](https://arxiv.org/abs/1707.02968) [[24b]](https://arxiv.org/abs/1805.00932). Agents find surprising ways to exploit simulated environments to maximize objectives not constrained enough to prevent exploits [[25a]](https://youtu.be/jAPJeJK18mw?t=10m29s) [[25b]](https://youtube.com/watch?v=-p7VhdTXA0k).
 
-  One way to constrain optimization sufficiently in order to avoid non-generalizable and non-robust solutions is more informative data for training, for example, using physics of the real world or dynamics of the social world as sources of signal as opposed to simulated environments with artificial agents or constrained physical environments without adversarial agents - the latter ones are not representative of corner cases to be faced by an agent in the unconstrained real/social world [[26a]](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418). Another way is more complex objective for optimization, for example, learning to predict not only statistics of interest, such as future cumulative rewards conditionally on agent's next actions, but also dynamics, i.e. some arbitrary future properties of environment conditionally on some arbitrary hypothetical future events including agent's next actions [[26b]](http://blog.piekniewski.info/2016/11/01/statistics-and-dynamics) [[26c]](https://blog.piekniewski.info/2016/11/03/reactive-vs-predictive-ai) [[26d]](https://blog.piekniewski.info/2016/11/30/learning-physics-is-the-way-to-go) [[26e]](https://youtu.be/DSYzHPW26Ig?t=6m28s). States and rewards correspond to agent's statistical summaries for interactions with environment while dynamics corresponds to agent's knowledge about how environment works [[27a]](https://youtu.be/6-Uiq8-wKrg?t=3m56s) [[27b]](https://youtu.be/fztxE3Ga8kU?t=58m5s). Agent's progress in learning to predict dynamics of environment [section "possible directions"] [[28a]](https://youtu.be/h7F5sCLIbKQ?t=8m1s) [[28b]](https://youtu.be/ElyFDUab30A?t=17m37s) [[28c]](https://deepmind.com/blog/article/unsupervised-learning) as well as agent's progress in creating options to influence it [section "possible directions"] [[28d]](https://youtube.com/watch?v=PL0Xq0FFQZ4) [[28e]](https://youtube.com/watch?v=dIUq3LYLEQo) [[28f]](https://blog.piekniewski.info/2016/08/09/intelligence-is-real) might be the most powerful kinds of agent's intrinsic motivation and might be the most efficient way to constrain optimization.
+  One way to constrain optimization sufficiently in order to avoid non-generalizable and non-robust solutions is more informative data for training, for example, using physics of the real world or dynamics of the social world as sources of signal as opposed to simulated environments with artificial agents or constrained physical environments without adversarial agents - the latter ones are not representative of corner cases to be faced by an agent in the unconstrained real/social world [[26a]](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418). Another way is more complex objective for optimization, for example, learning to predict not only statistics of interest, such as future cumulative rewards conditionally on agent's next actions, but also dynamics, i.e. some arbitrary future properties of environment conditionally on some arbitrary hypothetical future events including agent's next actions [[26b]](http://blog.piekniewski.info/2016/11/01/statistics-and-dynamics) [[26c]](https://blog.piekniewski.info/2016/11/03/reactive-vs-predictive-ai) [[26d]](https://blog.piekniewski.info/2016/11/30/learning-physics-is-the-way-to-go) [[26e]](https://youtu.be/DSYzHPW26Ig?t=6m28s). States and rewards correspond to agent's statistical summaries for interactions with environment while dynamics corresponds to agent's knowledge about how environment works [[27a]](https://youtu.be/6-Uiq8-wKrg?t=3m56s) [[27b]](https://youtu.be/fztxE3Ga8kU?t=58m5s). Agent's progress in learning to predict dynamics of environment [section "possible directions"] [[28a]](https://youtu.be/h7F5sCLIbKQ?t=8m1s) [[28b]](https://youtu.be/ElyFDUab30A?t=17m37s) [[28c]](https://deepmind.com/blog/article/unsupervised-learning) as well as agent's progress in creating options to influence it [section "possible directions"] [[28d]](https://youtube.com/watch?v=PL0Xq0FFQZ4) [[28e]](https://youtube.com/watch?v=dIUq3LYLEQo) [[28f]](https://blog.piekniewski.info/2016/08/09/intelligence-is-real) might be the most powerful kinds of agent's intrinsic motivation and might be the most efficient way to further constrain optimization.
 
-  The second biggest obstacle seems to be an enormous gap between complexity of simulated environments available for present computers and complexity of real-world environments available for present robots so that agent trained in simulated environment can't be transferred to robot in real-world environment with acceptable performance and robustness [[29]](https://youtube.com/watch?v=7A_QPGcjrh0). Boston Dynamics team never used machine learning to control their robots - they use real-time solvers of differential equations to calculate dynamics and optimal control for models of robots and environments which are not learned from data but specified manually [[30]](https://quora.com/What-kind-of-learning-algorithms-are-used-on-Boston-Dynamics-robots/answer/Eric-Jang). MIT researchers didn't use machine learning to control their robot in DARPA Robotics Challenge 2015, and their robot was the only robot which didn't fall or need physical assistance from humans [[31a]](https://youtube.com/watch?v=2GW7ozcUCFE).
+  The second biggest obstacle seems to be an enormous gap between complexity of simulated environments available for present computers and complexity of real-world environments available for present robots so that agent trained in simulated environment can't be transferred to robot in real-world environment with acceptable performance and robustness [[29]](https://youtube.com/watch?v=7A_QPGcjrh0). Boston Dynamics team never used machine learning to control their robots - they use real-time solvers of differential equations to calculate dynamics and optimal control for models of robots and environments which are not learned from data but specified manually [[30a]](https://spectrum.ieee.org/automaton/robotics/humanoids/how-boston-dynamics-taught-its-robots-to-dance) [[30b]](https://quora.com/What-kind-of-learning-algorithms-are-used-on-Boston-Dynamics-robots/answer/Eric-Jang). MIT researchers didn't use machine learning to control their robot in DARPA Robotics Challenge 2015, and their robot was the only robot which didn't fall or need physical assistance from humans [[31a]](https://youtube.com/watch?v=2GW7ozcUCFE).
 
   A tail event might be not learnable by a statistical model [[31b]](https://amazon.com/Black-Swan-Improbable-Robustness-Fragility/dp/081297381X), i.e. through forming a separating hyperplane of that model and using it as a decision boundary for a possible action, and might require some forms of non-statistical inference, i.e. through inducing a logical model/theory for the event, drawing hypotheses from it and checking them through experiments. Thus not only statistics but dynamics of phenomena might have to be calculated - model might have to be programmed or trained to simulate dynamics of phenomena [[31c]](https://youtu.be/0Tj6CeYCmzw?t=9m20s).
 
@@ -149,17 +149,46 @@
   ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/abs/1112.5309)  
 
 
-  *Alex Wissner-Gross*
+  *Karl Friston*
 
-> "Intelligent system needs to optimize future causal entropy, or to put it in plain language, maximize the available future choices. Which in turn means minimizing all the unpleasant situations with very few choices. This makes sense from evolutionary point of view as it is consistent with the ability to survive, it is consistent with what we see among humans (collecting wealth and hedging on multiple outcomes of unpredictable things) and generates reasonable behavior in several simple game situations."
+> "The free energy principle seems like an attempt to unify perception, cognition, homeostasis, and action. Free energy is a mathematical concept that represents the failure of some things to match other things they’re supposed to be predicting. The brain tries to minimize its free energy with respect to the world, ie minimize the difference between its models and reality. Sometimes it does that by updating its models of the world. Other times it does that by changing the world to better match its models. Perception and cognition are both attempts to create accurate models that match the world, thus minimizing free energy. Homeostasis and action are both attempts to make reality match mental models. Action tries to get the organism’s external state to match a mental model. Homeostasis tries to get the organism’s internal state to match a mental model. Since even bacteria are doing something homeostasis-like, all life shares the principle of being free energy minimizers. So life isn’t doing four things – perceiving, thinking, acting, and maintaining homeostasis. It’s really just doing one thing – minimizing free energy – in four different ways – with the particular way it implements this in any given situation depending on which free energy minimization opportunities are most convenient."
 
-  ["An Equation for Intelligence"](https://youtube.com/watch?v=PL0Xq0FFQZ4)  
-  ["The Physics of Artificial General Intelligence"](https://youtube.com/watch?v=dIUq3LYLEQo)  
+  ["Free Energy Principle"](https://youtube.com/watch?v=KkR24ieh5Ow)  
+  ["Neuroscience and the Free Energy Principle"](https://youtube.com/watch?v=NwzuibY5kUs)  
+  ["Free Energy Principle"](https://youtube.com/watch?v=NIu_dJGyIQI)  
+  ["Free Energy and Active Inference"](https://youtube.com/watch?v=dLXKFA33SSM)  
+  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=Y1egnoCWgUg)  
+  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=VHJiTO5ZlYA)  
+  ["Uncertainty and Active Inference"](https://youtube.com/watch?v=pHOAg9FZYeA)  
 
-  ["Intelligence is Real"](http://blog.piekniewski.info/2016/08/09/intelligence-is-real)  
-  ["Intelligence Confuses the Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent)  
+  [introduction](http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy) to free energy minimization  
+  [tutorial](https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc) on active inference  
+  [tutorial](https://medium.com/@solopchuk/free-energy-action-value-and-curiosity-514097bccc02) on free energy and curiosity  
+  [implementation](https://kaiu.me/2017/07/11/introducing-the-deep-active-inference-agent)  
 
-  ["Causal Entropic Forces"](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf)
+  ["The Free-Energy Principle: A Rough Guide to the Brain?"](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20-%20a%20rough%20guide%20to%20the%20brain.pdf)  
+  ["The Free-Energy Principle: A Unified Brain Theory?"](https://www.researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138)  
+  ["Exploration, Novelty, Surprise, and Free Energy Minimization"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791848)  
+  ["Action and Behavior: a Free-energy Formulation"](https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf)  
+  ["Computational Mechanisms of Curiosity and Goal-directed Exploration"](https://biorxiv.org/content/early/2018/09/07/411272)  
+  ["Expanding the Active Inference Landscape: More Intrinsic Motivations in the Perception-Action Loop"](https://arxiv.org/abs/1806.08083)  
+  ["Action and Perception as Divergence Minimization"](https://arxiv.org/abs/2009.01791)  
+
+
+  *Todd Hylton*
+
+> "The primary problem in computing today is that computers cannot organize themselves: trillions of degrees of freedom doing the same stuff over and over, narrowly focused rudimentary AI capabilities. Our mechanistic approach to the AI problem is ill-suited to complex real-world problems: machines are the sum of their parts and disconnected from the world except through us, the world is not a machine. Thermodynamics drives the evolution of everything. Thermodynamic evolution is the missing, unifying concept in computing systems. Thermodynamic evolution supposes that all organization spontaneously emerges in order to use sources of free energy in the universe and that there is competition for this energy. Thermodynamic evolution is second law of thermodynamics, except that it adds the idea that in order for entropy to increase an organization must emerge that makes it possible to access free energy. The first law of thermodynamics implies that there is competition for energy."
+
+  ["Thermodynamic Computing"](https://youtube.com/watch?v=zFGROl5uPzo)  
+  ["Thermodynamic Computing"](https://youtube.com/watch?v=EnI7r_8qe2U)  
+  ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017)  
+  ["Is the Universe a Product of Thermodynamic Evolution?"](https://youtube.com/watch?v=eB3m4X9xj2A)  
+  [Thermodynamic Computing Workshop](https://cccblog.org/2019/02/05/recap-of-the-cccs-thermodynamic-computing-workshop)  
+
+  ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html)  
+  ["Of Men and Machines"](https://www.toddhylton.net/2017/10/of-men-and-machines.html)  
+
+  ["Thermodynamic Neural Network"](https://mdpi.com/1099-4300/22/3/256)
 
 
   *Filip Piekniewski*
@@ -185,20 +214,17 @@
   ["Fundamental principles of cortical computation: unsupervised learning with prediction, compression and feedback"](https://arxiv.org/abs/1608.06277)  
 
 
-  *Todd Hylton*
+  *Alex Wissner-Gross*
 
-> "The primary problem in computing today is that computers cannot organize themselves: trillions of degrees of freedom doing the same stuff over and over, narrowly focused rudimentary AI capabilities. Our mechanistic approach to the AI problem is ill-suited to complex real-world problems: machines are the sum of their parts and disconnected from the world except through us, the world is not a machine. Thermodynamics drives the evolution of everything. Thermodynamic evolution is the missing, unifying concept in computing systems. Thermodynamic evolution supposes that all organization spontaneously emerges in order to use sources of free energy in the universe and that there is competition for this energy. Thermodynamic evolution is second law of thermodynamics, except that it adds the idea that in order for entropy to increase an organization must emerge that makes it possible to access free energy. The first law of thermodynamics implies that there is competition for energy."
+> "Intelligent system needs to optimize future causal entropy, or to put it in plain language, maximize the available future choices. Which in turn means minimizing all the unpleasant situations with very few choices. This makes sense from evolutionary point of view as it is consistent with the ability to survive, it is consistent with what we see among humans (collecting wealth and hedging on multiple outcomes of unpredictable things) and generates reasonable behavior in several simple game situations."
 
-  ["Thermodynamic Computing"](https://youtube.com/watch?v=zFGROl5uPzo)  
-  ["Thermodynamic Computing"](https://youtube.com/watch?v=EnI7r_8qe2U)  
-  ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017)  
-  ["Is the Universe a Product of Thermodynamic Evolution?"](https://youtube.com/watch?v=eB3m4X9xj2A)  
-  [Thermodynamic Computing Workshop](https://cccblog.org/2019/02/05/recap-of-the-cccs-thermodynamic-computing-workshop)  
+  ["An Equation for Intelligence"](https://youtube.com/watch?v=PL0Xq0FFQZ4)  
+  ["The Physics of Artificial General Intelligence"](https://youtube.com/watch?v=dIUq3LYLEQo)  
 
-  ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html)  
-  ["Of Men and Machines"](https://www.toddhylton.net/2017/10/of-men-and-machines.html)  
+  ["Intelligence is Real"](http://blog.piekniewski.info/2016/08/09/intelligence-is-real)  
+  ["Intelligence Confuses the Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent)  
 
-  ["Thermodynamic Neural Network"](https://mdpi.com/1099-4300/22/3/256)
+  ["Causal Entropic Forces"](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf)
 
 
   *Susanne Still*
@@ -212,30 +238,6 @@
   ["The Thermodynamics of Prediction"](https://arxiv.org/abs/1203.3271)  
   ["An Information-theoretic Approach to Curiosity-driven Reinforcement Learning"](https://researchgate.net/publication/229082289_An_information-theoretic_approach_to_curiosity-driven_reinforcement_learning)  
   ["Information Theoretic Approach to Interactive Learning"](https://arxiv.org/abs/0709.1948)  
-
-
-  *Karl Friston*
-
-> "The free energy principle seems like an attempt to unify perception, cognition, homeostasis, and action. Free energy is a mathematical concept that represents the failure of some things to match other things they’re supposed to be predicting. The brain tries to minimize its free energy with respect to the world, ie minimize the difference between its models and reality. Sometimes it does that by updating its models of the world. Other times it does that by changing the world to better match its models. Perception and cognition are both attempts to create accurate models that match the world, thus minimizing free energy. Homeostasis and action are both attempts to make reality match mental models. Action tries to get the organism’s external state to match a mental model. Homeostasis tries to get the organism’s internal state to match a mental model. Since even bacteria are doing something homeostasis-like, all life shares the principle of being free energy minimizers. So life isn’t doing four things – perceiving, thinking, acting, and maintaining homeostasis. It’s really just doing one thing – minimizing free energy – in four different ways – with the particular way it implements this in any given situation depending on which free energy minimization opportunities are most convenient."
-
-  ["Neuroscience and the Free Energy Principle"](https://youtube.com/watch?v=NwzuibY5kUs)  
-  ["Free Energy Principle"](https://youtube.com/watch?v=NIu_dJGyIQI)  
-  ["Free Energy and Active Inference"](https://youtube.com/watch?v=dLXKFA33SSM)  
-  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=Y1egnoCWgUg)  
-  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=VHJiTO5ZlYA)  
-  ["Uncertainty and Active Inference"](https://slideslive.com/38909755/uncertainty-and-active-inference)  
-
-  [introduction](http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy) to free energy minimization  
-  [tutorial](https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc) on active inference  
-  [tutorial](https://medium.com/@solopchuk/free-energy-action-value-and-curiosity-514097bccc02) on free energy and curiosity  
-  [implementation](https://kaiu.me/2017/07/11/introducing-the-deep-active-inference-agent)  
-
-  ["The Free-Energy Principle: A Rough Guide to the Brain?"](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20-%20a%20rough%20guide%20to%20the%20brain.pdf)  
-  ["The Free-Energy Principle: A Unified Brain Theory?"](https://www.researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138)  
-  ["Exploration, Novelty, Surprise, and Free Energy Minimization"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791848)  
-  ["Action and Behavior: a Free-energy Formulation"](https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf)  
-  ["Computational Mechanisms of Curiosity and Goal-directed Exploration"](https://biorxiv.org/content/early/2018/09/07/411272)  
-  ["Expanding the Active Inference Landscape: More Intrinsic Motivations in the Perception-Action Loop"](https://arxiv.org/abs/1806.08083)  
 
 
 
