@@ -15,7 +15,7 @@
 
   It makes more sense to compare AIs with humans not by effectiveness and efficiency of end products of adaptation (in games played between an AI and a human) but by effectiveness and efficiency of process of adaptation (in games played between a machine-learned agent and a human-coded agent after limited practice) [[5]](https://arxiv.org/abs/1911.01547).
 
-  Dota 2, StarCraft 2, Civilization 5 and probably even GTA 5 might be solved in not so distant future but ability to play any new game at human level with no prior training would be way more significant.
+  Dota 2, StarCraft 2, Civilization 5 and probably even GTA 5 might be solved in not so distant future but an ability to play any game at human level with no prior training would be way more significant.
 
   The second biggest issue with AI is lack of robustness in a long tail of unprecedented situations (including critical ones in healthcare [[6a]](https://scientificamerican.com/article/artificial-intelligence-is-rushing-into-patient-care-and-could-raise-risks), self-driving vehicles, finance) which at present can't be handled with accuracy even close to acceptable [[6b]](http://blog.piekniewski.info/2017/01/13/outside-the-box) [[6c]](http://blog.piekniewski.info/2017/07/27/measuring-performance-ml) [[6d]](http://blog.piekniewski.info/2017/03/06/give-me-a-dataset-to-train-and-i-shall-move-the-world) [[6e]](https://blog.piekniewski.info/2017/04/03/the-complexity-of-simplicity) [[6f]](https://youtu.be/uyZOcUDhIbY?t=17m27s).
 
@@ -151,34 +151,53 @@
 
   *Karl Friston*
 
-> "The free energy principle seems like an attempt to unify perception, cognition, homeostasis, and action. Free energy is a mathematical concept that represents the failure of some things to match other things they’re supposed to be predicting. The brain tries to minimize its free energy with respect to the world, ie minimize the difference between its models and reality. Sometimes it does that by updating its models of the world. Other times it does that by changing the world to better match its models. Perception and cognition are both attempts to create accurate models that match the world, thus minimizing free energy. Homeostasis and action are both attempts to make reality match mental models. Action tries to get the organism’s external state to match a mental model. Homeostasis tries to get the organism’s internal state to match a mental model. Since even bacteria are doing something homeostasis-like, all life shares the principle of being free energy minimizers. So life isn’t doing four things – perceiving, thinking, acting, and maintaining homeostasis. It’s really just doing one thing – minimizing free energy – in four different ways – with the particular way it implements this in any given situation depending on which free energy minimization opportunities are most convenient."
+> "The free energy principle seems like an attempt to unify perception, cognition, homeostasis, and action. Free energy is a mathematical concept that represents the failure of some things to match other things they’re supposed to be predicting. The brain tries to minimize its free energy with respect to the world, i.e. minimize the difference between its models and reality. Sometimes it does that by updating its models of the world. Other times it does that by changing the world to better match its models. Perception and cognition are both attempts to create accurate models that match the world, thus minimizing free energy. Homeostasis and action are both attempts to make reality match mental models. Action tries to get the organism’s external state to match a mental model. Homeostasis tries to get the organism’s internal state to match a mental model. Since even bacteria are doing something homeostasis-like, all life shares the principle of being free energy minimizers. So life isn’t doing four things – perceiving, thinking, acting, and maintaining homeostasis. It’s really just doing one thing – minimizing free energy – in four different ways – with the particular way it implements this in any given situation depending on which free energy minimization opportunities are most convenient."
 
-  ["Free Energy Principle"](https://youtube.com/watch?v=KkR24ieh5Ow)  
+  [introduction](https://youtube.com/watch?v=NIu_dJGyIQI)  
+  [introduction](https://youtube.com/watch?v=KkR24ieh5Ow)  
+  [introduction](https://youtube.com/watch?v=TcFLQvz5uEg)  
+
+  ["Me and My Markov Blanket"](https://youtube.com/watch?v=d4KrWxrP-T0)  
+  ["Me and My Markov Blanket"](https://youtube.com/watch?v=rmkjnfMvjv4)  
   ["Neuroscience and the Free Energy Principle"](https://youtube.com/watch?v=NwzuibY5kUs)  
-  ["Free Energy Principle"](https://youtube.com/watch?v=NIu_dJGyIQI)  
-  ["Free Energy and Active Inference"](https://youtube.com/watch?v=dLXKFA33SSM)  
+  ["Markov Blankets and Bayesian Mechanics"](https://youtube.com/watch?v=j53lfLyFOPA)  
+  ["Free Energy Principle"](https://youtube.com/watch?v=YUOp-EbiuCk)  
+  ["Active Inference and Deep Generative Models"](https://youtube.com/watch?v=_DvJwUAjM1w)  
+  ["I Am Therefore I Think"](https://youtube.com/watch?v=G_sQZeFRjR8)  
   ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=Y1egnoCWgUg)  
   ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=VHJiTO5ZlYA)  
+  ["Action and Perception as Divergence Minimization"](https://youtube.com/watch?v=VHJiTO5ZlYA)  
+  ["Predictive Coding, Active Inference and Belief Propagation"](https://youtube.com/watch?v=b1hEc6vay_k)  
+  ["The Variational Foundations of Movement"](https://youtube.com/watch?v=zWFfZHqOnvM)  
+  ["Consciousness by Inference"](https://youtube.com/watch?v=HeQfO4byFhg)  
   ["Uncertainty and Active Inference"](https://youtube.com/watch?v=pHOAg9FZYeA)  
 
-  [introduction](http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy) to free energy minimization  
-  [tutorial](https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc) on active inference  
-  [tutorial](https://medium.com/@solopchuk/free-energy-action-value-and-curiosity-514097bccc02) on free energy and curiosity  
+  [Active Inference Lab](https://youtube.com/c/ActiveInference)
+
+  [Free energy principle](https://en.wikipedia.org/wiki/Free_energy_principle)
+
+  [introduction](http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy)  
+  [tutorial](https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc)  
+  [tutorial](https://medium.com/@solopchuk/free-energy-action-value-and-curiosity-514097bccc02)  
   [implementation](https://kaiu.me/2017/07/11/introducing-the-deep-active-inference-agent)  
 
+  ["The Mathematics of Mind-time"](https://aeon.co/essays/consciousness-is-not-a-thing-but-a-process-of-inference)  
+  ["Am I Self-Conscious? (Or Does Self-Organization Entail Self-Consciousness?)"](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00579/full)  
+
   ["The Free-Energy Principle: A Rough Guide to the Brain?"](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20-%20a%20rough%20guide%20to%20the%20brain.pdf)  
-  ["The Free-Energy Principle: A Unified Brain Theory?"](https://www.researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138)  
+  ["The Free-Energy Principle: A Unified Brain Theory?"](https://researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138)  
   ["Exploration, Novelty, Surprise, and Free Energy Minimization"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791848)  
   ["Action and Behavior: a Free-energy Formulation"](https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf)  
   ["Computational Mechanisms of Curiosity and Goal-directed Exploration"](https://biorxiv.org/content/early/2018/09/07/411272)  
   ["Expanding the Active Inference Landscape: More Intrinsic Motivations in the Perception-Action Loop"](https://arxiv.org/abs/1806.08083)  
-  ["Action and Perception as Divergence Minimization"](https://arxiv.org/abs/2009.01791)  
+  ["Action and Perception as Divergence Minimization"](https://arxiv.org/abs/2009.01791)  *(a paper with co-authors from Google)*  
 
 
   *Todd Hylton*
 
 > "The primary problem in computing today is that computers cannot organize themselves: trillions of degrees of freedom doing the same stuff over and over, narrowly focused rudimentary AI capabilities. Our mechanistic approach to the AI problem is ill-suited to complex real-world problems: machines are the sum of their parts and disconnected from the world except through us, the world is not a machine. Thermodynamics drives the evolution of everything. Thermodynamic evolution is the missing, unifying concept in computing systems. Thermodynamic evolution supposes that all organization spontaneously emerges in order to use sources of free energy in the universe and that there is competition for this energy. Thermodynamic evolution is second law of thermodynamics, except that it adds the idea that in order for entropy to increase an organization must emerge that makes it possible to access free energy. The first law of thermodynamics implies that there is competition for energy."
 
+  ["Thermodynamic Neural Network"](https://youtube.com/watch?v=HdKjFaYljVI)  
   ["Thermodynamic Computing"](https://youtube.com/watch?v=zFGROl5uPzo)  
   ["Thermodynamic Computing"](https://youtube.com/watch?v=EnI7r_8qe2U)  
   ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017)  
@@ -188,7 +207,7 @@
   ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html)  
   ["Of Men and Machines"](https://www.toddhylton.net/2017/10/of-men-and-machines.html)  
 
-  ["Thermodynamic Neural Network"](https://mdpi.com/1099-4300/22/3/256)
+  ["Thermodynamic Neural Network"](https://mdpi.com/1099-4300/22/3/256) ([demo](https://youtube.com/channel/UC8DC_Gz4Limpt2H8HBieTgg/videos))
 
 
   *Filip Piekniewski*
